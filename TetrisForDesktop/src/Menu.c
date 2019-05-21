@@ -5,9 +5,9 @@
 #include "Util.h"
 #include "Constant.h"
 
-void Menu_Create(Menu* menu, char(*items)[MENU_ITEMS_CONTENT_SIZE], int count, int startPositionXToPrint, int startPositionYToPrint, int menuColor){
+void Menu_Create(Menu* menu, char(*items)[MENU_ITEMS_CONTENT_SIZE], int count, int startPositionXToPrint, int startPositionYToPrint, int menuColor) {
 	int i;
-	for (i = 0; i < count; i++){
+	for (i = 0; i < count; i++) {
 		strcpy(menu->items[i], items[i]);
 	}
 	menu->count = count;
@@ -17,37 +17,38 @@ void Menu_Create(Menu* menu, char(*items)[MENU_ITEMS_CONTENT_SIZE], int count, i
 	menu->menuColor = menuColor;
 }
 
-void Menu_Print(Menu* menu){
+void Menu_Print(Menu* menu) {
 	int i;
 	int startPositionXToPrint = menu->startPositionToPrint.x;
-	int startPositionYToPrint = menu->startPositionToPrint.y;
+	int startPositionYToPrint = menu->startPositionToPrint.y;//메인메뉴에서 선택한 메뉴의 위치
 	CursorUtil_Hide();
-	for (i = 0; i < menu->count; i++){
+	/*메인 메뉴 화면에서 현재 커서가 위치하고있는 메뉴의 색상은 기본 색상과 다르게 표시하고(if) 다른메뉴는 기본 색상으로 표시(else)*/
+	for (i = 0; i < menu->count; i++) {
 		CursorUtil_GotoXY(startPositionXToPrint, startPositionYToPrint++);
-		if (i == menu->selectedIndex){
+		if (i == menu->selectedIndex) {
 			FontUtil_ChangeFontColor(WHITE_INVERSION);
 		}
-		else{
+		else {
 			FontUtil_ChangeFontColor(menu->menuColor);
 		}
 		printf("%s", menu->items[i]);
-	}
-	FontUtil_ChangeFontColor(DEFAULT_FONT_COLOR);
+	}//for
+	FontUtil_ChangeFontColor(DEFAULT_FONT_COLOR);//다시 폰트의 색을 기본색으로 초기화
 }
 
-int Menu_ProcessKey(Menu* menu){
-	while (True){
-		if (_kbhit()){
+int Menu_ProcessKey(Menu* menu) {
+	while (True) {
+		if (_kbhit()) { //어떤 키가 눌렸을때
 			int key = _getch();
-			if (key == ENTER_KEY_CODE){
+			if (key == ENTER_KEY_CODE) { //메뉴를 선택했을 때
 				break;
 			}
-			switch (key){
-			case 0xE0:
-				if (_kbhit()){
-					switch (_getch()){
+			switch (key) {
+			case 0xE0://문자 이외의 값이 들어온 경우(위, 아래 화살표만 처리가 필요하므로)
+				if (_kbhit()) {
+					switch (_getch()) {
 					case UP_KEY_CODE:
-						menu->selectedIndex = (menu->selectedIndex - 1 + menu->count) % menu->count;
+						menu->selectedIndex = (menu->selectedIndex - 1 + menu->count) % menu->count;//가장 위의 메뉴에서 ↑버튼을 누르면 가장 아래의 메뉴로 이동하도록 +menu_count를 함
 						Menu_Print(menu);
 						break;
 					case DOWN_KEY_CODE:
@@ -60,9 +61,9 @@ int Menu_ProcessKey(Menu* menu){
 			}
 		}
 	}
-	return menu->selectedIndex;
+	return menu->selectedIndex; //선택한 메뉴의 인덱스값 반환
 }
 
-const char* Menu_GetSelectedContent(Menu* menu){
+const char* Menu_GetSelectedContent(Menu* menu) {
 	return menu->items[menu->selectedIndex];
 }

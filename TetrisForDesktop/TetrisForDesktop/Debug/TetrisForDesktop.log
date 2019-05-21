@@ -1,0 +1,11 @@
+﻿  Array.c
+  Block.c
+  main.c
+  Menu.c
+  Queue.c
+  RankingManager.c
+  TetrisManager.c
+  TetrisView.c
+  Util.c
+  코드를 생성하고 있습니다...
+  TetrisForDesktop.vcxproj -> C:\Users\홍\Tetris\TetrisForDesktop\Debug\TetrisForDesktop.exe
