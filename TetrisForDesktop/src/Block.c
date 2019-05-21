@@ -21,6 +21,7 @@ const static Point blockExamples[BLOCK_EXAMPLES_SIZE][POSITIONS_SIZE][POSITIONS_
 		{ { 0, 5 }, { 0, 6 }, { 0, 7 }, { 0, 8 } },
 		{ { -1, 6 }, { 0, 6 }, { 1, 6 }, { 2, 6 } }
 	},
+
 	//    ㅁ
 	//ㅁㅁㅁ
 	{
@@ -29,6 +30,7 @@ const static Point blockExamples[BLOCK_EXAMPLES_SIZE][POSITIONS_SIZE][POSITIONS_
 		{ { 0, 6 }, { 0, 7 }, { 0, 8 }, { 1, 6 } },
 		{ { -1, 6 }, { -1, 7 }, { 0, 7 }, { 1, 7 } }
 	},
+
 	//  ㅁㅁ
 	//ㅁㅁ
 	{
@@ -37,6 +39,7 @@ const static Point blockExamples[BLOCK_EXAMPLES_SIZE][POSITIONS_SIZE][POSITIONS_
 		{ { 0, 7 }, { 0, 8 }, { 1, 6 }, { 1, 7 } },
 		{ { -1, 6 }, { 0, 6 }, { 0, 7 }, { 1, 7 } }
 	},
+
 	//ㅁㅁ
 	//  ㅁㅁ
 	{
@@ -45,6 +48,7 @@ const static Point blockExamples[BLOCK_EXAMPLES_SIZE][POSITIONS_SIZE][POSITIONS_
 		{ { 0, 6 }, { 0, 7 }, { 1, 7 }, { 1, 8 } },
 		{ { -1, 8 }, { 0, 8 }, { 0, 7 }, { 1, 7 } }
 	},
+
 	//  ㅁ
 	//ㅁㅁㅁ
 	{
@@ -53,6 +57,7 @@ const static Point blockExamples[BLOCK_EXAMPLES_SIZE][POSITIONS_SIZE][POSITIONS_
 		{ { 0, 6 }, { 0, 7 }, { 0, 8 }, { 1, 7 } },
 		{ { -1, 7 }, { 0, 6 }, { 0, 7 }, { 1, 7 } }
 	},
+
 	//ㅁ
 	//ㅁㅁㅁ
 	{
@@ -61,6 +66,7 @@ const static Point blockExamples[BLOCK_EXAMPLES_SIZE][POSITIONS_SIZE][POSITIONS_
 		{ { 0, 6 }, { 0, 7 }, { 0, 8 }, { 1, 8 } },
 		{ { -1, 7 }, { 0, 7 }, { 1, 7 }, { 1, 6 } }
 	},
+
 	//ㅁㅁ
 	//ㅁㅁ
 	{
@@ -88,7 +94,9 @@ Block Block_Make(int isFirst, Block block) {
 	int j;
 	int next1;
 	int next2;
+
 	srand((unsigned int)time(NULL));//블럭의 종류는 무작위로 선택되어야 하므로
+
 	if (isFirst) {//가장 처음에 만들이지는 블록일 경우
 		block.current = rand() % BLOCK_EXAMPLES_SIZE;//block.current에 무작위의 블록 모양 번호 저장
 		block.hold = -1;
@@ -96,43 +104,58 @@ Block Block_Make(int isFirst, Block block) {
 	else {
 		Queue_Get(&block.next, &block.current, sizeof(int));//block.current에 block.next블록을 복사
 	}
+
 	for (i = 0; i < POSITIONS_SIZE; i++) {
 		for (j = 0; j < POSITIONS_SIZE; j++) {
 			block.positions[i][j] = blockExamples[block.current][i][j];//block.positions에 현재 출력될 블럭의 좌표 저장
 		}
 	}
+
 	if (isFirst) {
 		Queue_Create(&block.next, NEXT_QUEUE_SIZE, sizeof(int));//다음 블록 정보가 저장될 큐를 만듦
+
 		do {
 			next1 = rand() % BLOCK_EXAMPLES_SIZE;
 		} while (block.current == next1); //다음에 나올 블럭이 현재 블럭 모양과 같지 않을때까지 다음에 출력될 블럭을 결정
 		Queue_Put(&block.next, &next1, sizeof(int));//위에서 생성된 큐에 다음에 출력될 next1블럭 정보 저장
 	}
-	Queue_At(&block.next, &next1, 0, sizeof(int));//큐가 비어있지 않다면 next1에 block.next정보 저장
+
+	Queue_At(&block.next, &next1, 0, sizeof(int));// next1에 block.next정보 저장
 	do {
 		next2 = rand() % BLOCK_EXAMPLES_SIZE;
 	} while (block.current == next2 || next1 == next2);//next2는 현재블럭과 next1블럭과 같지 않아야함
 	Queue_Put(&block.next, &next2, sizeof(int));//큐가 비어있지 않다면 next2에 block.next정보 저장
+
 	block.direction = UP;
 	block.color = rand() % (FONT_COLOR_SIZE - 1) + 1;
+
 	return block;
 }
 
 void Block_Destroy(Block block) {
 	Queue_Destroy(&block.next);
+
+	return ;
 }
 
 Block Block_Move(Block block, int direction) {
 	switch (direction) {
 	case LEFT:
 		return _Block_MoveToLeft(block);
+
 	case RIGHT:
 		return _Block_MoveToRight(block);
+
 	case DOWN:
 		return _Block_MoveToDown(block);
+
 	case UP:
 		return _Block_RotateRight(block);
+
+	default: exit(2);
+			 break;
 	}
+
 	return _Block_MoveToDown(block);//방향키를 누르지 않으면 자동으로 아래로 내려옴
 }
 
@@ -143,8 +166,10 @@ Point* Block_GetPositions(Block block) {
 void Block_ChangeCurrentForHold(Block* block) {
 	int i;
 	int j;
+	int temp;
+
 	/*현재 block과 hold된 블럭을 바꿈*/
-	int temp = block->current;
+	temp = block->current;
 	block->current = block->hold;
 	block->hold = temp;
 
@@ -159,10 +184,13 @@ void Block_ChangeCurrentForHold(Block* block) {
 	else {//hold된 블럭이 없던 경우
 		*block = Block_Make(False, *block);//다음에 출력되기로했던 블록을 가져와서 출력한 후 next1, next2정보 수정 (False : 처음으로 만들어지는 블럭이 아님)
 	}
+
+	return ;
 }
 
 void Block_PrintNext(Block block, int index, int x, int y) {
 	int next;
+
 	ScreenUtil_ClearRectangle(x + 2, y + 1, 12, 2); // use temp size (magic number)
 	CursorUtil_GotoXY(x, y++);
 	printf("┏━ Next %d ━┓", index + 1);
@@ -171,6 +199,8 @@ void Block_PrintNext(Block block, int index, int x, int y) {
 	_Block_PrintDefaultBlock(next, x, &y);
 	CursorUtil_GotoXY(x, y++);
 	printf("┗━━━━━━┛");
+
+	return ;
 }
 
 void Block_PrintHold(Block block, int x, int y) {
@@ -181,43 +211,52 @@ void Block_PrintHold(Block block, int x, int y) {
 	_Block_PrintDefaultBlock(block.hold, x, &y);
 	CursorUtil_GotoXY(x, y++);
 	printf("┗━━━━━━┛");
+
+	return ;
 }
 
 static Block _Block_MoveToDown(Block block) {
 	int i;
 	int j;
+
 	for (i = 0; i < POSITIONS_SIZE; i++) {//블럭을 구성하는 각 ■의 위치를 한 칸 아래로 이동
 		for (j = 0; j < POSITIONS_SIZE; j++) {
 			block.positions[i][j].x++;
 		}
 	}
+
 	return block;
 }
 
 static Block _Block_MoveToLeft(Block block) {
 	int i;
 	int j;
+
 	for (i = 0; i < POSITIONS_SIZE; i++) {
 		for (j = 0; j < POSITIONS_SIZE; j++) {
 			block.positions[i][j].y--;
 		}
 	}
+
 	return block;
 }
 
 static Block _Block_MoveToRight(Block block) {
 	int i;
 	int j;
+
 	for (i = 0; i < POSITIONS_SIZE; i++) {
 		for (j = 0; j < POSITIONS_SIZE; j++) {
 			block.positions[i][j].y++;
 		}
 	}
+
 	return block;
 }
 
 static Block _Block_RotateRight(Block block) {
 	block.direction = (block.direction + 1) % POSITIONS_SIZE;
+
 	return block;
 }
 
@@ -228,40 +267,53 @@ static void _Block_PrintDefaultBlock(int blockNumber, int x, int* y) {
 		CursorUtil_GotoXY(x, (*y)++);
 		printf("┃            ┃");
 		break;
+
 	case 0:
 		printf("┃  ■■■■  ┃");
 		CursorUtil_GotoXY(x, (*y)++);
 		printf("┃            ┃");
 		break;
+
 	case 1:
 		printf("┃       ■   ┃");
 		CursorUtil_GotoXY(x, (*y)++);
 		printf("┃   ■■■   ┃");
 		break;
+
 	case 2:
 		printf("┃     ■■   ┃");
 		CursorUtil_GotoXY(x, (*y)++);
 		printf("┃   ■■     ┃");
 		break;
+
 	case 3:
 		printf("┃   ■■     ┃");
 		CursorUtil_GotoXY(x, (*y)++);
 		printf("┃     ■■   ┃");
 		break;
+
 	case 4:
 		printf("┃     ■     ┃");
 		CursorUtil_GotoXY(x, (*y)++);
 		printf("┃   ■■■   ┃");
 		break;
+
 	case 5:
 		printf("┃   ■       ┃");
 		CursorUtil_GotoXY(x, (*y)++);
 		printf("┃   ■■■   ┃");
 		break;
+
 	case 6:
 		printf("┃    ■■    ┃");
 		CursorUtil_GotoXY(x, (*y)++);
 		printf("┃    ■■    ┃");
 		break;
+
+	default: printf("PRINT BLOCK ERROR!!");
+			 exit(3);
+			 break;
 	}
+
+	return ;
 }
