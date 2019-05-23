@@ -46,7 +46,7 @@ void Menu_Print(Menu* menu) {
 }
 
 int Menu_ProcessKey(Menu* menu) {
-	int key = 0;//입력한 키를 구분하기 위한 변수
+	int key = -1;//입력한 키를 구분하기 위한 변수
 
 	do {
 			key = _getch();
