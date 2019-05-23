@@ -37,30 +37,25 @@ void Menu_Print(Menu* menu) {
 }
 
 int Menu_ProcessKey(Menu* menu) {
-	while (True) {
-		if (_kbhit()) { //어떤 키가 눌렸을때
-			int key = _getch();
-			if (key == ENTER_KEY_CODE) { //메뉴를 선택했을 때
-				break;
-			}
+	int key = 0;
+	do {
+			key = _getch();
+
 			switch (key) {
-			case 0xE0://문자 이외의 값이 들어온 경우(위, 아래 화살표만 처리가 필요하므로)
-				if (_kbhit()) {
-					switch (_getch()) {
-					case UP_KEY_CODE:
-						menu->selectedIndex = (menu->selectedIndex - 1 + menu->count) % menu->count;//가장 위의 메뉴에서 ↑버튼을 누르면 가장 아래의 메뉴로 이동하도록 +menu_count를 함
-						Menu_Print(menu);
-						break;
-					case DOWN_KEY_CODE:
-						menu->selectedIndex = (menu->selectedIndex + 1) % menu->count;
-						Menu_Print(menu);
-						break;
-					}
-				}
+			case ENTER_KEY_CODE: break;
+
+			case UP_KEY_CODE:
+				menu->selectedIndex = (menu->selectedIndex - 1 + menu->count) % menu->count;//가장 위의 메뉴에서 ↑버튼을 누르면 가장 아래의 메뉴로 이동하도록 +menu_count를 함
+				Menu_Print(menu);
+				break;
+			case DOWN_KEY_CODE:
+				menu->selectedIndex = (menu->selectedIndex + 1) % menu->count;
+				Menu_Print(menu);
 				break;
 			}
-		}
-	}
+		
+	} while (key != ENTER_KEY_CODE);
+
 	return menu->selectedIndex; //선택한 메뉴의 인덱스값 반환
 }
 

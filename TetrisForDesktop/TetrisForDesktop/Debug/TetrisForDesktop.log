@@ -121,7 +121,6 @@ c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15139)
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15367): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\users\홍\tetris\tetrisfordesktop\src\util.h(9): warning C4255: 'CursorUtil_Show': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
 c:\users\홍\tetris\tetrisfordesktop\src\util.h(10): warning C4255: 'CursorUtil_Hide': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\홍\tetris\tetrisfordesktop\src\menu.c(40): warning C4127: 조건식이 상수입니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
   Queue.c

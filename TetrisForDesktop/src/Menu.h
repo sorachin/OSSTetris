@@ -23,6 +23,4 @@ Menu_GetSelectedContent : 선택된 메뉴의 이름을 반환
 void Menu_Create(Menu* menu, char(*items)[MENU_ITEMS_CONTENT_SIZE], int count, int startPositionXToPrint, int startPositionYToPrint, int menuColor);
 void Menu_Print(Menu* menu);
 int Menu_ProcessKey(Menu* menu);
-const char* Menu_GetSelectedContent(Menu* menu);//XXX사용되지 않음
-
 #endif
