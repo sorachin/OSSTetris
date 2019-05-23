@@ -30,6 +30,7 @@ enum MenuStartPosition {
 
 void TetrisView_StartGame(TetrisView* tetrisView) {
 	PlaySound(TEXT(TETRIS_BACKGROUND_MUSIC_FILE_NAME), NULL, SND_ASYNC | SND_LOOP);//배경음악을 반복재생
+
 	if (!(tetrisView->level >= MIN_SPEED_LEVEL && tetrisView->level <= MAX_SPEED_LEVEL)) { //게임을 시작하기 전에 게임을 실행할 레벨을 입력할 수 있는데, 이때의 레벨 범위가 유효한지(1~10)를 검사
 		tetrisView->level = MIN_SPEED_LEVEL; //레벨의 범위가 유효하지 않으면 가장 낮은레벨(1)로 설정
 	}//if
@@ -40,12 +41,14 @@ void TetrisView_StartGame(TetrisView* tetrisView) {
 	FontUtil_ChangeFontColor(DEFAULT_FONT_COLOR);
 	TetrisManager_PrintBoard(&tetrisView->tetrisManager);
 	TetrisManager_PrintDetailInfomation(&tetrisView->tetrisManager);
+
+	return ;
 }
 
 void TetrisView_ProcessGame(TetrisView* tetrisView, int processType, int direction) {
-
 	//it is used to move left or right at bottom in case of space which you want to move is available
 	static int processReachedCaseCount = 0;
+
 	if (processType == DIRECTION) {//방향키를 누른경우
 		TetrisManager_ProcessDirection(&tetrisView->tetrisManager, direction);
 	}
@@ -55,10 +58,15 @@ void TetrisView_ProcessGame(TetrisView* tetrisView, int processType, int directi
 	else if (processType == AUTO) {//자동으로 내려오는 경우
 		TetrisManager_ProcessAuto(&tetrisView->tetrisManager);
 	}
+	else {
+		exit(1);
+	}
+
 	if (TetrisManager_IsReachedToBottom(&tetrisView->tetrisManager, MOVING_BLOCK)) {//현재 이동중인 블럭이바닥에 닿았을 때
 		if (processType == DIRECT_DOWN) {//스페이스바를 누른 경우
 			processReachedCaseCount = 0;
-			if (TetrisManager_ProcessReachedCase(&tetrisView->tetrisManager) == END) {
+
+			if (TetrisManager_ProcessReachedCase(&tetrisView->tetrisManager) == END) {//게임이 끝난경우
 				TetrisView_EndGame(tetrisView);
 				return;
 			}
@@ -72,7 +80,6 @@ void TetrisView_ProcessGame(TetrisView* tetrisView, int processType, int directi
 					TetrisView_EndGame(tetrisView);
 					return;
 				}
-
 				processReachedCaseCount = 0;//다음 블럭을 위해 processReachedCaseCount 초기화
 			}
 			else {
@@ -80,7 +87,10 @@ void TetrisView_ProcessGame(TetrisView* tetrisView, int processType, int directi
 			}
 		}
 	}
+
 	TetrisManager_ProcessDeletingLines(&tetrisView->tetrisManager);//삭제될 라인을 찾아서 테트리스판 갱신
+
+	return ;
 }
 
 void TetrisView_PauseGame(TetrisView* tetrisView) {
@@ -88,24 +98,32 @@ void TetrisView_PauseGame(TetrisView* tetrisView) {
 	TetrisManager_PauseTotalTime(&tetrisView->tetrisManager);
 	PlaySound(NULL, 0, 0);//일시정지하면 배경음악이 일시정지됨
 	FontUtil_ChangeFontColor(LIGHT_YELLOW);//Pause됬을때 보여지는 메뉴의 폰트 색상
-	TetrisView_ProcessPauseMenu(tetrisView);
+	TetrisView_PrintPauseMenu(tetrisView);
 	FontUtil_ChangeFontColor(DEFAULT_FONT_COLOR);
-
+	
 	switch (tetrisView->pauseMenu) {//사용자가 선택한 일시정지 메뉴
 	case RESUME_PAUSE_MENU:
 		TetrisManager_StartTotalTime(&tetrisView->tetrisManager);
 		PlaySound(TEXT(TETRIS_BACKGROUND_MUSIC_FILE_NAME), NULL, SND_ASYNC | SND_LOOP);
 		break;
+
 	case MAIN_MENU_PAUSE_MENU:
 		TetrisManager_StopTotalTime(&tetrisView->tetrisManager);
 		break;
+
+	default: 
+		exit(1); break;
 	}
+	
+	return ;
 }
 
 void TetrisView_EndGame(TetrisView* tetrisView) {
 	TetrisManager_PauseTotalTime(&tetrisView->tetrisManager);//Rank에 기록을 등록할 수 있으므로 시간을 초기화하지 않고 일시정지함
 	PlaySound(NULL, 0, 0);
 	TetrisView_ProcessEndMenu(tetrisView);//끝났을 때 화면 출력
+
+	return ;
 }
 
 void TetrisView_ShowRanking(TetrisView* tetrisView) {
@@ -116,6 +134,8 @@ void TetrisView_ShowRanking(TetrisView* tetrisView) {
 	RankingManager_Load(&tetrisView->rankingManager);
 	RankingManager_Print(&tetrisView->rankingManager);
 	RankingManager_Destroy(&tetrisView->rankingManager);
+
+	return ;
 }
 
 void TetrisView_AddRanking(TetrisView* tetrisView) {
@@ -135,10 +155,12 @@ void TetrisView_AddRanking(TetrisView* tetrisView) {
 	printf("┃:                         ┃");
 	CursorUtil_GotoXY(x, y++);
 	printf("┗━━━━━━━━━━━━━┛");
+
 	x += 4;
 	y -= 2;
 	CursorUtil_GotoXY(x, y++);
 	CursorUtil_Show();//아이디가 입력될 위치에 커서를 보여줌
+
 	fgets(id, ID_SIZE + 1, stdin);//아이디를 입력받음
 	CursorUtil_Hide();//커서를 보이지않게 함
 	for (i = ID_SIZE; i >= 0; i--) {//입력한 아이디를 배열에 저장
@@ -167,14 +189,18 @@ void TetrisView_AddRanking(TetrisView* tetrisView) {
 	RankingManager_Add(&tetrisView->rankingManager, ranking);
 	RankingManager_Save(&tetrisView->rankingManager);
 	RankingManager_Destroy(&tetrisView->rankingManager);
+
+	return ;
 }
 
 void TetrisView_ShowSetting(TetrisView* tetrisView) {
 	int x = SETTING_POSITION_X_TO_PRINT;
 	int y = SETTING_POSITION_Y_TO_PRINT;//x,y : 커서의 위치
+
 	if (!(tetrisView->level >= MIN_SPEED_LEVEL && tetrisView->level <= MAX_SPEED_LEVEL)) {
 		tetrisView->level = MIN_SPEED_LEVEL;
 	}
+
 	system("cls");
 	CursorUtil_GotoXY(x, y++);
 	printf("┏━━━━━━━━━┓");
@@ -186,12 +212,15 @@ void TetrisView_ShowSetting(TetrisView* tetrisView) {
 	printf("┃:                 ┃");
 	CursorUtil_GotoXY(x, y++);
 	printf("┗━━━━━━━━━┛");
+
 	x += 4;
 	y -= 2;
 	CursorUtil_GotoXY(x, y++);
 	CursorUtil_Show();
+
 	scanf("%d", &tetrisView->level);
 	CursorUtil_Hide();
+
 	if (tetrisView->level >= MIN_SPEED_LEVEL && tetrisView->level <= MAX_SPEED_LEVEL) {//레벨 범위가 유효할 경우
 
 	}
@@ -204,7 +233,10 @@ void TetrisView_ShowSetting(TetrisView* tetrisView) {
 	else {
 		tetrisView->level = MIN_SPEED_LEVEL;
 	}
+
 	while (getchar() != '\n');//버퍼에 남아있는 값을 비움
+
+	return ;
 }
 
 void TetrisView_ProcessMainMenu(TetrisView* tetrisView) {
@@ -220,6 +252,7 @@ void TetrisView_ProcessMainMenu(TetrisView* tetrisView) {
 	int menuCount = 4;
 	int x = MAIN_MENU_X;
 	int y = MAIN_MENU_Y;
+
 	WindowUtil_ChangeWindowSize(WINDOW_LINE_SIZE, WINDOW_COL_SIZE);//출력화면크기 설정
 
 	//메인메뉴 화면 출력
@@ -311,9 +344,11 @@ void TetrisView_ProcessMainMenu(TetrisView* tetrisView) {
 	/*게임을 pause하거나 end할 일이 없으므로 0으로 설정*/
 	tetrisView->pauseMenu = 0;
 	tetrisView->endMenu = 0;
+
+	return ;
 }
 
-void TetrisView_ProcessPauseMenu(TetrisView* tetrisView) {
+void TetrisView_PrintPauseMenu(TetrisView* tetrisView) {
 	Menu menu = { 0, };
 	char items[MENU_ITEMS_COUNT][MENU_ITEMS_CONTENT_SIZE] = {
 		"[1] R E S U M E", "[2] M A I N M E N U"
@@ -332,6 +367,13 @@ void TetrisView_ProcessPauseMenu(TetrisView* tetrisView) {
 	if (tetrisView->pauseMenu == RESUME_PAUSE_MENU) {
 		TetrisManager_PrintBoard(&tetrisView->tetrisManager);
 	}
+	else if (tetrisView->pauseMenu == MAIN_MENU_PAUSE_MENU) {
+	}
+	else {
+		exit(1);
+	}
+
+	return ;
 }
 
 void TetrisView_ProcessEndMenu(TetrisView* tetrisView) {
@@ -342,6 +384,7 @@ void TetrisView_ProcessEndMenu(TetrisView* tetrisView) {
 	int menuCount = 3;
 	int x = END_MENU_X;
 	int y = END_MENU_Y;
+
 	system("cls");
 	CursorUtil_GotoXY(x, y++);
 	printf("■■■  ■  ■  ■■■          ■■■  ■  ■  ■■");
@@ -353,14 +396,18 @@ void TetrisView_ProcessEndMenu(TetrisView* tetrisView) {
 	printf("  ■    ■  ■  ■              ■      ■ ■   ■ ■");
 	CursorUtil_GotoXY(x, y++);
 	printf("  ■    ■  ■  ■■■          ■■■  ■  ■  ■■");
+
+	/*게임이 끝났을때 메뉴화면 출력*/
 	x += 19;
 	y += 2;
-	/*게임이 끝났을때 메뉴화면 출력, 메뉴선택기능*/
 	Menu_Create(&menu, items, menuCount, x, y, DEFAULT_FONT_COLOR);
 	Menu_Print(&menu);
+
 	tetrisView->endMenu = Menu_ProcessKey(&menu) + 1;
 	tetrisView->mainMenu = 0;
 	tetrisView->pauseMenu = 0;
+
+	return ;
 }
 
 DWORD TetrisView_GetDownMilliSecond(TetrisView* tetrisView) {
@@ -369,4 +416,6 @@ DWORD TetrisView_GetDownMilliSecond(TetrisView* tetrisView) {
 
 void TetrisView_MakeHold(TetrisView* tetrisView) {
 	TetrisManager_MakeHold(&tetrisView->tetrisManager);
+
+	return ;
 }

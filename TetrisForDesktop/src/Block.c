@@ -152,7 +152,7 @@ Block Block_Move(Block block, int direction) {
 	case UP:
 		return _Block_RotateRight(block);
 
-	default: exit(2);
+	default: exit(1);
 			 break;
 	}
 
@@ -311,7 +311,7 @@ static void _Block_PrintDefaultBlock(int blockNumber, int x, int* y) {
 		break;
 
 	default: printf("PRINT BLOCK ERROR!!");
-			 exit(3);
+			 exit(1);
 			 break;
 	}
 

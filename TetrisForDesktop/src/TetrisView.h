@@ -38,7 +38,7 @@ void TetrisView_ShowRanking(TetrisView* tetrisView);
 void TetrisView_AddRanking(TetrisView* tetrisView);
 void TetrisView_ShowSetting(TetrisView* tetrisView);
 void TetrisView_ProcessMainMenu(TetrisView* tetrisView);
-void TetrisView_ProcessPauseMenu(TetrisView* tetrisView);
+void TetrisView_PrintPauseMenu(TetrisView* tetrisView);
 void TetrisView_ProcessEndMenu(TetrisView* tetrisView);
 
 //make temporarily for calling from main function
