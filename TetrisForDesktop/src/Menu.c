@@ -7,21 +7,27 @@
 
 void Menu_Create(Menu* menu, char(*items)[MENU_ITEMS_CONTENT_SIZE], int count, int startPositionXToPrint, int startPositionYToPrint, int menuColor) {
 	int i;
+
 	for (i = 0; i < count; i++) {
 		strcpy(menu->items[i], items[i]);
 	}
+
 	menu->count = count;
 	menu->selectedIndex = 0;
 	menu->startPositionToPrint.x = startPositionXToPrint;
 	menu->startPositionToPrint.y = startPositionYToPrint;
 	menu->menuColor = menuColor;
+
+	return ;
 }
 
 void Menu_Print(Menu* menu) {
 	int i;
 	int startPositionXToPrint = menu->startPositionToPrint.x;
 	int startPositionYToPrint = menu->startPositionToPrint.y;//메인메뉴에서 선택한 메뉴의 위치
+
 	CursorUtil_Hide();
+
 	/*메인 메뉴 화면에서 현재 커서가 위치하고있는 메뉴의 색상은 기본 색상과 다르게 표시하고(if) 다른메뉴는 기본 색상으로 표시(else)*/
 	for (i = 0; i < menu->count; i++) {
 		CursorUtil_GotoXY(startPositionXToPrint, startPositionYToPrint++);
@@ -33,11 +39,15 @@ void Menu_Print(Menu* menu) {
 		}
 		printf("%s", menu->items[i]);
 	}//for
+
 	FontUtil_ChangeFontColor(DEFAULT_FONT_COLOR);//다시 폰트의 색을 기본색으로 초기화
+
+	return ;
 }
 
 int Menu_ProcessKey(Menu* menu) {
-	int key = 0;
+	int key = 0;//입력한 키를 구분하기 위한 변수
+
 	do {
 			key = _getch();
 
@@ -52,6 +62,8 @@ int Menu_ProcessKey(Menu* menu) {
 				menu->selectedIndex = (menu->selectedIndex + 1) % menu->count;
 				Menu_Print(menu);
 				break;
+
+			default: break;
 			}
 		
 	} while (key != ENTER_KEY_CODE);
