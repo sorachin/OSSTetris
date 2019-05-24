@@ -1,10 +1,8 @@
 ﻿  Array.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): error C2220: 경고가 오류로 처리되어 생성된 'object' 파일이 없습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(36): warning C4820: '_timespec64': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): warning C4820: 'timespec': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
   Block.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): error C2220: 경고가 오류로 처리되어 생성된 'object' 파일이 없습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(36): warning C4820: '_timespec64': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): warning C4820: 'timespec': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
@@ -44,7 +42,6 @@ c:\users\홍\tetris\tetrisfordesktop\src\util.h(10): warning C4255: 'CursorUtil_
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
   main.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): error C2220: 경고가 오류로 처리되어 생성된 'object' 파일이 없습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
@@ -82,7 +79,6 @@ c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): war
 c:\users\홍\tetris\tetrisfordesktop\src\rankingmanager.h(11): warning C4820: '_ranking': '1'바이트 채움 문자가 데이터 멤버 'id' 뒤에 추가되었습니다.
 c:\users\홍\tetris\tetrisfordesktop\src\rankingmanager.h(15): warning C4820: '_ranking': '4'바이트 채움 문자가 데이터 멤버 'totalTime' 뒤에 추가되었습니다.
   Menu.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): error C2220: 경고가 오류로 처리되어 생성된 'object' 파일이 없습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
@@ -120,10 +116,8 @@ c:\users\홍\tetris\tetrisfordesktop\src\util.h(10): warning C4255: 'CursorUtil_
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
   Queue.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): error C2220: 경고가 오류로 처리되어 생성된 'object' 파일이 없습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
   RankingManager.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): error C2220: 경고가 오류로 처리되어 생성된 'object' 파일이 없습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(36): warning C4820: '_timespec64': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): warning C4820: 'timespec': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
@@ -140,7 +134,6 @@ c:\users\홍\tetris\tetrisfordesktop\src\rankingmanager.c(97): warning C4777: 'p
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
   TetrisManager.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): error C2220: 경고가 오류로 처리되어 생성된 'object' 파일이 없습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
@@ -185,7 +178,6 @@ c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(510): warning C4127: �
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
   TetrisView.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): error C2220: 경고가 오류로 처리되어 생성된 'object' 파일이 없습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
@@ -229,7 +221,6 @@ c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): w
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): warning C4710: 'int scanf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
   Util.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): error C2220: 경고가 오류로 처리되어 생성된 'object' 파일이 없습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9989): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
@@ -273,3 +264,29 @@ c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): w
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): warning C4710: 'int sprintf(char *const ,const char *const ,...)': 함수를 인라이닝하지 못했습니다.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
   코드를 생성하고 있습니다...
+c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(308): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(306) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(309) : 참고: 이 줄에서 호출 피드
+c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(115): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(113) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(116) : 참고: 이 줄에서 메모리 로드 피드
+c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(417): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(416) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
+  c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(417) : 참고: 이 줄에서 호출 피드
+c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(409): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(408) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
+  c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(409) : 참고: 이 줄에서 호출 피드
+c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(446): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(445) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\홍\tetris\tetrisfordesktop\src\tetrismanager.c(456) : 참고: 이 줄에서 메모리 로드 피드
+c:\users\홍\tetris\tetrisfordesktop\src\rankingmanager.c(94): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\홍\tetris\tetrisfordesktop\src\rankingmanager.c(92) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\홍\tetris\tetrisfordesktop\src\rankingmanager.c(94) : 참고: 이 줄에서 호출 피드
+c:\users\홍\tetris\tetrisfordesktop\src\block.c(159): warning C4702: 접근할 수 없는 코드입니다.
+c:\users\홍\tetris\tetrisfordesktop\src\array.c(310): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\홍\tetris\tetrisfordesktop\src\array.c(310) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
+  c:\users\홍\tetris\tetrisfordesktop\src\array.c(310) : 참고: 이 줄에서 호출 피드
+c:\users\홍\tetris\tetrisfordesktop\src\array.c(308): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\홍\tetris\tetrisfordesktop\src\array.c(307) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\홍\tetris\tetrisfordesktop\src\array.c(310) : 참고: 이 줄에서 호출 피드
+  TetrisForDesktop.vcxproj -> C:\Users\홍\Tetris\TetrisForDesktop\Debug\TetrisForDesktop.exe
