@@ -121,7 +121,7 @@ void TetrisView_PauseGame(TetrisView* tetrisView) {
 void TetrisView_EndGame(TetrisView* tetrisView) {
 	TetrisManager_PauseTotalTime(&tetrisView->tetrisManager);//Rank에 기록을 등록할 수 있으므로 시간을 초기화하지 않고 일시정지함
 	PlaySound(NULL, 0, 0);
-	TetrisView_ProcessEndMenu(tetrisView);//끝났을 때 화면 출력
+	TetrisView_PrintEndMenu(tetrisView);//끝났을 때 화면 출력
 
 	return ;
 }
@@ -239,7 +239,7 @@ void TetrisView_ShowSetting(TetrisView* tetrisView) {
 	return ;
 }
 
-void TetrisView_ProcessMainMenu(TetrisView* tetrisView) {
+void TetrisView_PrintMainMenu(TetrisView* tetrisView) {
 	/****변수 설명****
 	items = [가능한 메뉴의 최대 개수][가능한 메뉴의 제목 길이]인 배열, 메뉴 목록 저장
 	menuCount : 메뉴 개수
@@ -376,7 +376,7 @@ void TetrisView_PrintPauseMenu(TetrisView* tetrisView) {
 	return ;
 }
 
-void TetrisView_ProcessEndMenu(TetrisView* tetrisView) {
+void TetrisView_PrintEndMenu(TetrisView* tetrisView) {
 	Menu menu = { 0, };
 	char items[MENU_ITEMS_COUNT][MENU_ITEMS_CONTENT_SIZE] = {
 		"[1] R A N K I N G", "[2] M A I N M E N U", "[3] E X I T"

@@ -37,9 +37,9 @@ void TetrisView_EndGame(TetrisView* tetrisView);
 void TetrisView_ShowRanking(TetrisView* tetrisView);
 void TetrisView_AddRanking(TetrisView* tetrisView);
 void TetrisView_ShowSetting(TetrisView* tetrisView);
-void TetrisView_ProcessMainMenu(TetrisView* tetrisView);
+void TetrisView_PrintMainMenu(TetrisView* tetrisView);
 void TetrisView_PrintPauseMenu(TetrisView* tetrisView);
-void TetrisView_ProcessEndMenu(TetrisView* tetrisView);
+void TetrisView_PrintEndMenu(TetrisView* tetrisView);
 
 //make temporarily for calling from main function
 /*****함수 기능*****

@@ -25,7 +25,7 @@ int main(void) {
 	int isOverTime = True;
 
 	do {
-		TetrisView_ProcessMainMenu(&tetrisView);//게임을 실행하면 메인메뉴부터 실행됨
+		TetrisView_PrintMainMenu(&tetrisView);//게임을 실행하면 메인메뉴부터 실행됨
 
 		switch (tetrisView.mainMenu) {//선택된 메뉴에 따라 기능 실행
 	
