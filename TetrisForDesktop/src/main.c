@@ -85,20 +85,22 @@ int main(void) {
 								}
 								else if (key == ESC_KEY_CODE) {
 									TetrisView_PauseGame(&tetrisView);
+
 									if (tetrisView.pauseMenu == MAIN_MENU_PAUSE_MENU) {//게임을 일시정지한 후 메인메뉴로 이동한 경우
 										isSetMainMenu = True;
+										isGaming = False;
+										tetrisView.endMenu = MAIN_MENU_END_MENU;
 										break;
 									}
-									processType = AUTO; //RESUME을 선택하여 게임을 이어서하는 경우
-									tickCount = GetTickCount();
-									break;
+									else {
+										processType = AUTO; //RESUME을 선택하여 게임을 이어서하는 경우
+										tickCount = GetTickCount();
+										break;
+									}
 								}
 								else if (key == L_KEY_CODE) {//L == Hold키
 									TetrisView_MakeHold(&tetrisView);
 								}
-								else {
-									exit(1);
-								}//if-else
 							}
 						}//if
 					}//while
@@ -106,11 +108,6 @@ int main(void) {
 						processType = AUTO;
 						direction = DOWN;
 						tickCount = GetTickCount();
-					}
-
-					//for selecting main menu at pause menu
-					if (isSetMainMenu) {
-					isGaming = False;
 					}
 
 					TetrisView_ProcessGame(&tetrisView, processType, direction);//게임진행화면 출력
@@ -129,7 +126,8 @@ int main(void) {
 						tetrisView.mainMenu = EXIT_MAIN_MENU;//게임을 종료
 					}
 					else {
-						exit(1);
+						if (isGaming == False)
+							exit(1); //tetrisView.endMenu가 위의 어느 조건에도 해당하지않는데 게임이 진행중일 수 없으므로 오류가 발생한 것.
 					}
 				}
 				break;//START_MAIN_MENU
