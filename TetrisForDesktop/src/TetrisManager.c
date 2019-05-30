@@ -240,9 +240,9 @@ void TetrisManager_MakeHold(TetrisManager* tetrisManager){
 }
 
 void TetrisManager_StartTotalTime(TetrisManager* tetrisManager){
-	DWORD totalTimeThreadID;
+	//DWORD totalTimeThreadID;
 	tetrisManager->isTotalTimeAvailable = True;
-	tetrisManager->totalTimeThread = (HANDLE)_beginthreadex(NULL, 0, _TetrisManager_OnTotalTimeThreadStarted, tetrisManager, 0, (unsigned *)&totalTimeThreadID);
+	//tetrisManager->totalTimeThread = (HANDLE)_beginthreadex(NULL, 0, _TetrisManager_OnTotalTimeThreadStarted, tetrisManager, 0, (unsigned long *)&totalTimeThreadID);
 }
 
 void TetrisManager_PauseTotalTime(TetrisManager* tetrisManager){
@@ -287,7 +287,7 @@ static void _TetrisManager_PrintKeys( int x, int y){
 	printf("早L (l)    早hold       早");
 	CursorUtil_GotoXY(x, y++);
 	printf("曲收收收收收收收收收收收旭");
-}
+} 
 
 static void _TetrisManager_PrintBlock(TetrisManager* tetrisManager, int blockType, int status){
 	int i;
@@ -502,7 +502,9 @@ static void _TetrisManager_ChangeBoardByStatus(TetrisManager* tetrisManager, int
 	for (i = 0; i < POSITIONS_SIZE; i++){
 		int x = Block_GetPositions(block)[i].x;
 		int y = Block_GetPositions(block)[i].y;
+
 		tetrisManager->board[x][y] = status;
+	
 	}
 }
 
