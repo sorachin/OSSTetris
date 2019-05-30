@@ -6,8 +6,8 @@
 #define WINDOW_COL_SIZE 80
 
 void CursorUtil_GotoXY(int x, int y);
-void CursorUtil_Show();
-void CursorUtil_Hide();
+void CursorUtil_Show(void);
+void CursorUtil_Hide(void);
 void WindowUtil_ChangeWindowSize(int lines, int cols);
 void FontUtil_ChangeFontColor(int color);
 void ScreenUtil_ClearRectangle(int leftTopX, int leftTopY, int width, int height);
