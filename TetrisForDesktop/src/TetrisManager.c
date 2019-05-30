@@ -26,13 +26,13 @@ static const char boardTypesToPrint[BOARD_TYPES_TO_PRINT_ROW_SIZE][BOARD_TYPES_T
 };
 
 static void _TetrisManager_PrintStatus(TetrisManager* tetrisManager, int x, int y);
-static void _TetrisManager_PrintKeys(TetrisManager* tetrisManager, int x, int y);
+static void _TetrisManager_PrintKeys( int x, int y);
 static void _TetrisManager_PrintBlock(TetrisManager* tetrisManager, int blockType, int status);
 static void _TetrisManager_InitBoard(TetrisManager* tetrisManager);
 static void _TetrisManager_UpSpeedLevel(TetrisManager* tetrisManager);
 static void _TetrisManager_SearchLineIndexesToDelete(TetrisManager* tetrisManager, int* indexes, int* count);
 static void _TetrisManager_DeleteLines(TetrisManager* tetrisManager, int* indexes, int count);
-static void _TetrisManager_HighlightLinesToDelete(TetrisManager* tetrisManager, int* indexes, int count);
+static void _TetrisManager_HighlightLinesToDelete( int* indexes, int count);
 static Block _TetrisManager_GetBlockByType(TetrisManager* tetrisManager, int blockType);
 static void _TetrisManager_MakeShadow(TetrisManager* tetrisManager);
 static int _TetrisManager_CheckValidPosition(TetrisManager* tetrisManager, int blockType, int direction);
@@ -99,7 +99,7 @@ void TetrisManager_ProcessDeletingLines(TetrisManager* tetrisManager){
 		//during hightlighting the lines to delete, hide moving block and shadow block
 		_TetrisManager_PrintBlock(tetrisManager, SHADOW_BLOCK, EMPTY);
 		_TetrisManager_PrintBlock(tetrisManager, MOVING_BLOCK, EMPTY);
-		_TetrisManager_HighlightLinesToDelete(tetrisManager, indexes, count);
+		_TetrisManager_HighlightLinesToDelete( indexes, count);
 		_TetrisManager_DeleteLines(tetrisManager, indexes, count);
 		_TetrisManager_ChangeBoardByStatus(tetrisManager, MOVING_BLOCK, MOVING_BLOCK);
 		TetrisManager_PrintBoard(tetrisManager);
@@ -194,7 +194,7 @@ void TetrisManager_PrintDetailInfomation(TetrisManager* tetrisManager){
 	_TetrisManager_PrintStatus(tetrisManager, x, y);
 	x += 6;
 	y += 4;
-	_TetrisManager_PrintKeys(tetrisManager, x, y);
+	_TetrisManager_PrintKeys( x, y);
 	x -= 4;
 	y += 10;
 	Block_PrintNext(tetrisManager->block, 0, x, y);
@@ -267,7 +267,7 @@ static void _TetrisManager_PrintStatus(TetrisManager* tetrisManager, int x, int 
 	printf("曲收收旭   曲收收收旭   曲收收收收收收旭");
 }
 
-static void _TetrisManager_PrintKeys(TetrisManager* tetrisManager, int x, int y){
+static void _TetrisManager_PrintKeys( int x, int y){
 	ScreenUtil_ClearRectangle(x, y, 26, 9); // use temp size (magic number)
 	CursorUtil_GotoXY(x, y++);
 	printf("旨收收收收 Keys 收收收收旬");
@@ -398,7 +398,7 @@ static void _TetrisManager_DeleteLines(TetrisManager* tetrisManager, int* indexe
 	}
 }
 
-static void _TetrisManager_HighlightLinesToDelete(TetrisManager* tetrisManager, int* indexes, int count){
+static void _TetrisManager_HighlightLinesToDelete( int* indexes, int count){
 	int i;
 	int j;
 	int k;
