@@ -16,6 +16,7 @@ LINES_TO_DELETE_HIGHLIGHTING_COUNT = 라인 삭제시 하이라이트 될 횟수
 LINES_TO_DELETE_HIGHLIGHTING_MILLISECOND = 라인 삭제시 하이라이트때 지연 시간
 */
 #define MAX_MAKE_OBSTACLE_ONE_LINE_COUNT 2
+<<<<<<< HEAD
 #define MILLI_SECONDS_PER_SECOND 1000   
 #define INITIAL_SPEED 300               
 #define SPEED_LEVEL_OFFSET 40           
@@ -25,6 +26,19 @@ LINES_TO_DELETE_HIGHLIGHTING_MILLISECOND = 라인 삭제시 하이라이트때 지연 시간
 #define LINES_TO_DELETE_HIGHLIGHTING_COUNT 3 
 #define LINES_TO_DELETE_HIGHLIGHTING_MILLISECOND 100 
 #define BOARD_TYPES_TO_PRINT_ROW_SIZE 12 
+=======
+#define MILLI_SECONDS_PER_SECOND 1000
+#define INITIAL_SPEED 300
+#define SPEED_LEVEL_OFFSET 30
+#define LEVELP_UP_CONDITION 5
+#define STATUS_POSITION_X_TO_PRINT 38
+#define STATUS_POSITION_Y_TO_PRINT 1
+
+#define LINES_TO_DELETE_HIGHLIGHTING_COUNT 3
+#define LINES_TO_DELETE_HIGHLIGHTING_MILLISECOND 100
+
+#define BOARD_TYPES_TO_PRINT_ROW_SIZE 12
+>>>>>>> fix
 #define BOARD_TYPES_TO_PRINT_COL_SIZE 3
 
 //테트리스판에 출력될 상자 타입
@@ -52,13 +66,13 @@ _TetrisManager_PrintTotalTime = 실행 시간 출력
 _TetrisManager_MakeObstacleOneLine = 장애물 생성
 */
 static void _TetrisManager_PrintStatus(TetrisManager* tetrisManager, int x, int y);
-static void _TetrisManager_PrintKeys(TetrisManager* tetrisManager, int x, int y);
+static void _TetrisManager_PrintKeys( int x, int y);
 static void _TetrisManager_PrintBlock(TetrisManager* tetrisManager, int blockType, int status);
 static void _TetrisManager_InitBoard(TetrisManager* tetrisManager);
 static void _TetrisManager_UpSpeedLevel(TetrisManager* tetrisManager);
 static void _TetrisManager_SearchLineIndexesToDelete(TetrisManager* tetrisManager, int* indexes, int* count);
 static void _TetrisManager_DeleteLines(TetrisManager* tetrisManager, int* indexes, int count);
-static void _TetrisManager_HighlightLinesToDelete(TetrisManager* tetrisManager, int* indexes, int count);
+static void _TetrisManager_HighlightLinesToDelete( int* indexes, int count);
 static Block _TetrisManager_GetBlockByType(TetrisManager* tetrisManager, int blockType);
 static void _TetrisManager_MakeShadow(TetrisManager* tetrisManager);
 static int _TetrisManager_CheckValidPosition(TetrisManager* tetrisManager, int blockType, int direction);
@@ -126,7 +140,7 @@ void TetrisManager_ProcessDeletingLines(TetrisManager* tetrisManager) {
 		//during hightlighting the lines to delete, hide moving block and shadow block
 		_TetrisManager_PrintBlock(tetrisManager, SHADOW_BLOCK, EMPTY);
 		_TetrisManager_PrintBlock(tetrisManager, MOVING_BLOCK, EMPTY);
-		_TetrisManager_HighlightLinesToDelete(tetrisManager, indexes, count);
+		_TetrisManager_HighlightLinesToDelete( indexes, count);
 		_TetrisManager_DeleteLines(tetrisManager, indexes, count);
 		_TetrisManager_ChangeBoardByStatus(tetrisManager, MOVING_BLOCK, MOVING_BLOCK);
 		TetrisManager_PrintBoard(tetrisManager);
@@ -223,7 +237,7 @@ void TetrisManager_PrintDetailInfomation(TetrisManager* tetrisManager) {
 	_TetrisManager_PrintStatus(tetrisManager, x, y);
 	x += 6;
 	y += 4;
-	_TetrisManager_PrintKeys(tetrisManager, x, y);
+	_TetrisManager_PrintKeys( x, y);
 	x -= 4;
 	y += 10;
 	Block_PrintNext(tetrisManager->block, 0, x, y);
@@ -268,10 +282,17 @@ void TetrisManager_MakeHold(TetrisManager* tetrisManager) {
 	}
 }
 
+<<<<<<< HEAD
 void TetrisManager_StartTotalTime(TetrisManager* tetrisManager) {
 	DWORD totalTimeThreadID;
 	tetrisManager->isTotalTimeAvailable = True; //실행중이므로 true
 	tetrisManager->totalTimeThread = (HANDLE)_beginthreadex(NULL, 0, _TetrisManager_OnTotalTimeThreadStarted, tetrisManager, 0, (unsigned *)&totalTimeThreadID);
+=======
+void TetrisManager_StartTotalTime(TetrisManager* tetrisManager){
+	//DWORD totalTimeThreadID;
+	tetrisManager->isTotalTimeAvailable = True;
+	//tetrisManager->totalTimeThread = (HANDLE)_beginthreadex(NULL, 0, _TetrisManager_OnTotalTimeThreadStarted, tetrisManager, 0, (unsigned long *)&totalTimeThreadID);
+>>>>>>> fix
 }
 
 void TetrisManager_PauseTotalTime(TetrisManager* tetrisManager) {
@@ -296,7 +317,11 @@ static void _TetrisManager_PrintStatus(TetrisManager* tetrisManager, int x, int 
 	printf("┗━━┛   ┗━━━┛   ┗━━━━━━┛");
 }
 
+<<<<<<< HEAD
 static void _TetrisManager_PrintKeys(TetrisManager* tetrisManager, int x, int y) {
+=======
+static void _TetrisManager_PrintKeys( int x, int y){
+>>>>>>> fix
 	ScreenUtil_ClearRectangle(x, y, 26, 9); // use temp size (magic number)
 	CursorUtil_GotoXY(x, y++);
 	printf("┏━━━━ Keys ━━━━┓");
@@ -316,7 +341,7 @@ static void _TetrisManager_PrintKeys(TetrisManager* tetrisManager, int x, int y)
 	printf("┃L (l)    ┃hold       ┃");
 	CursorUtil_GotoXY(x, y++);
 	printf("┗━━━━━━━━━━━┛");
-}
+} 
 
 static void _TetrisManager_PrintBlock(TetrisManager* tetrisManager, int blockType, int status) {
 	int i;
@@ -427,7 +452,11 @@ static void _TetrisManager_DeleteLines(TetrisManager* tetrisManager, int* indexe
 	}
 }
 
+<<<<<<< HEAD
 static void _TetrisManager_HighlightLinesToDelete(TetrisManager* tetrisManager, int* indexes, int count) { // 라인이 삭제될때의 처리되는 부분(모양과 색변화)
+=======
+static void _TetrisManager_HighlightLinesToDelete( int* indexes, int count){
+>>>>>>> fix
 	int i;
 	int j;
 	int k;
@@ -534,7 +563,9 @@ static void _TetrisManager_ChangeBoardByStatus(TetrisManager* tetrisManager, int
 	for (i = 0; i < POSITIONS_SIZE; i++) { //block 의 4 좌표를 돌면서 입력받은 status 로 변경
 		int x = Block_GetPositions(block)[i].x;
 		int y = Block_GetPositions(block)[i].y;
+
 		tetrisManager->board[x][y] = status;
+	
 	}
 }
 

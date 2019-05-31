@@ -1,47 +1,4 @@
-﻿  Array.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(36): warning C4820: '_timespec64': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): warning C4820: 'timespec': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-  Block.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(36): warning C4820: '_timespec64': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): warning C4820: 'timespec': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9989): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9995): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10000): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10004): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10011): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10021): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10025): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10030): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10037): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10040): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10043): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10048): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10051): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10246): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10270): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10831): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13662): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13844): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13947): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14043): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14147): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14804): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14821): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14838): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14857): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14976): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15126): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15139): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15367): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(9): warning C4255: 'CursorUtil_Show': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(10): warning C4255: 'CursorUtil_Hide': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
-  main.c
+﻿  TetrisManager.c
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
@@ -76,218 +33,23 @@ c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15139)
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15367): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(36): warning C4820: '_timespec64': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): warning C4820: 'timespec': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.h(11): warning C4820: '_ranking': '1'바이트 채움 문자가 데이터 멤버 'id' 뒤에 추가되었습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.h(15): warning C4820: '_ranking': '4'바이트 채움 문자가 데이터 멤버 'totalTime' 뒤에 추가되었습니다.
-  Menu.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9989): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9995): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10000): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10004): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10011): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10021): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10025): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10030): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10037): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10040): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10043): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10048): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10051): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10246): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10270): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10831): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13662): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13844): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13947): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14043): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14147): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14804): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14821): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14838): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14857): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14976): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15126): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15139): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15367): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(9): warning C4255: 'CursorUtil_Show': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(10): warning C4255: 'CursorUtil_Hide': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(506): warning C4242: '=': 'int'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(512): warning C4127: 조건식이 상수입니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
-  Queue.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-  RankingManager.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(36): warning C4820: '_timespec64': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): warning C4820: 'timespec': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.h(11): warning C4820: '_ranking': '1'바이트 채움 문자가 데이터 멤버 'id' 뒤에 추가되었습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.h(15): warning C4820: '_ranking': '4'바이트 채움 문자가 데이터 멤버 'totalTime' 뒤에 추가되었습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(9): warning C4255: 'CursorUtil_Show': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(10): warning C4255: 'CursorUtil_Hide': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.c(97): warning C4777: 'printf' : 서식 문자열 '%02d'에 'int' 형식의 인수가 필요하지만 variadic 인수 6의 형식이 'long'입니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.c(97): note: 서식 문자열에서 '%ld'을(를) 사용하는 것이 좋습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.c(97): warning C4777: 'printf' : 서식 문자열 '%02d'에 'int' 형식의 인수가 필요하지만 variadic 인수 7의 형식이 'long'입니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.c(97): note: 서식 문자열에서 '%ld'을(를) 사용하는 것이 좋습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.c(97): warning C4777: 'printf' : 서식 문자열 '%02d'에 'int' 형식의 인수가 필요하지만 variadic 인수 8의 형식이 'long'입니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.c(97): note: 서식 문자열에서 '%ld'을(를) 사용하는 것이 좋습니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
-  TetrisManager.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9989): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9995): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10000): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10004): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10011): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10021): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10025): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10030): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10037): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10040): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10043): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10048): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10051): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10246): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10270): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10831): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13662): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13844): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13947): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14043): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14147): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14804): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14821): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14838): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14857): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14976): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15126): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15139): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15367): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(36): warning C4820: '_timespec64': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): warning C4820: 'timespec': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(9): warning C4255: 'CursorUtil_Show': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(10): warning C4255: 'CursorUtil_Hide': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(274): warning C4057: '함수': '_beginthreadex_proc_type'은(는) 약간 다른 기본 형식에 대한 간접 참조가 'DWORD (__stdcall *)(void *)'과(와) 다릅니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(299): warning C4100: 'tetrisManager': 참조되지 않은 정식 매개 변수입니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(430): warning C4100: 'tetrisManager': 참조되지 않은 정식 매개 변수입니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(537): warning C4242: '=': 'int'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(542): warning C4127: 조건식이 상수입니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
-  TetrisView.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\corecrt.h(212): warning C4668: '__cplusplus'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9989): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9995): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10000): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10004): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10011): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10021): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10025): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10030): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10037): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10040): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10043): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10048): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10051): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10246): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10270): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10831): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13662): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13844): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13947): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14043): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14147): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14804): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14821): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14838): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14857): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14976): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15126): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15139): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15367): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(36): warning C4820: '_timespec64': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): warning C4820: 'timespec': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.h(11): warning C4820: '_ranking': '1'바이트 채움 문자가 데이터 멤버 'id' 뒤에 추가되었습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.h(15): warning C4820: '_ranking': '4'바이트 채움 문자가 데이터 멤버 'totalTime' 뒤에 추가되었습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(9): warning C4255: 'CursorUtil_Show': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(10): warning C4255: 'CursorUtil_Hide': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): warning C4710: 'int scanf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
-  Util.c
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(6537): warning C4255: 'EnableMouseInPointerForThread': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winuser.h(14186): warning C4255: 'GetThreadDpiHostingBehavior': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9989): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(9995): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10000): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10004): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10011): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10021): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10025): warning C4668: '_WIN32_WINNT_WIN10_TH2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10030): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10037): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10040): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10043): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10048): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10051): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10246): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10270): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(10831): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13662): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13844): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(13947): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14043): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14147): warning C4668: '_WIN32_WINNT_WIN10_RS5'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14804): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14821): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14838): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14857): warning C4668: '_WIN32_WINNT_WIN10_RS2'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(14976): warning C4668: '_WIN32_WINNT_WIN10_RS3'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15126): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15139): warning C4668: '_WIN32_WINNT_WIN10_RS4'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15367): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(9): warning C4255: 'CursorUtil_Show': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.h(10): warning C4255: 'CursorUtil_Hide': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.c(9): warning C4204: 비표준 확장이 사용됨: 비상수 집합체 이니셜라이저입니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.c(9): warning C4242: '초기화 중': 'int'에서 'SHORT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.c(13): warning C4255: 'CursorUtil_Show': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.c(20): warning C4255: 'CursorUtil_Hide': 함수 프로토타입을 입력하지 않았습니다. '()'에서 '(void)'로 변환됩니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\util.c(34): warning C4242: '함수': 'int'에서 'WORD'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
-c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): warning C4710: 'int sprintf(char *const ,const char *const ,...)': 함수를 인라이닝하지 못했습니다.
-  c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(1774): note: 'sprintf' 선언을 참조하십시오.
-  코드를 생성하고 있습니다...
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(337): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(335) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(338) : 참고: 이 줄에서 호출 피드
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(142): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(140) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(144) : 참고: 이 줄에서 메모리 로드 피드
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(115): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(113) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(116) : 참고: 이 줄에서 메모리 로드 피드
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(308): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(306) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(309) : 참고: 이 줄에서 호출 피드
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(417): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(416) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(417) : 참고: 이 줄에서 호출 피드
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(409): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(408) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(409) : 참고: 이 줄에서 호출 피드
 c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(446): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(445) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(446) : 참고: 이 줄에서 호출 피드
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(438): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(437) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(438) : 참고: 이 줄에서 호출 피드
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(476): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(475) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(486) : 참고: 이 줄에서 메모리 로드 피드
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.c(94): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.c(92) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\rankingmanager.c(94) : 참고: 이 줄에서 호출 피드
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\block.c(159): warning C4702: 접근할 수 없는 코드입니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\array.c(310): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\array.c(310) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\array.c(310) : 참고: 이 줄에서 호출 피드
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\array.c(308): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\array.c(307) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\array.c(310) : 참고: 이 줄에서 호출 피드
-  LINK : C:\Users\sorac\OSSTetris\OSSTetris\TetrisForDesktop\Debug\TetrisForDesktop.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(445) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(456) : 참고: 이 줄에서 메모리 로드 피드
   TetrisForDesktop.vcxproj -> C:\Users\sorac\OSSTetris\OSSTetris\TetrisForDesktop\Debug\TetrisForDesktop.exe
