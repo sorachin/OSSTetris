@@ -33,23 +33,23 @@ c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15139)
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winioctl.h(15367): warning C4668: '_WIN32_WINNT_WIN10_RS1'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(36): warning C4820: '_timespec64': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\time.h(43): warning C4820: 'timespec': '4'바이트 채움 문자가 데이터 멤버 'tv_nsec' 뒤에 추가되었습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(506): warning C4242: '=': 'int'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(512): warning C4127: 조건식이 상수입니다.
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(549): warning C4242: '=': 'int'에서 'char'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(555): warning C4127: 조건식이 상수입니다.
 c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): warning C4710: 'int printf(const char *const ,...)': 함수를 인라이닝하지 못했습니다.
   c:\program files (x86)\windows kits\10\include\10.0.17763.0\ucrt\stdio.h(948): note: 'printf' 선언을 참조하십시오.
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(115): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(113) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(116) : 참고: 이 줄에서 메모리 로드 피드
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(308): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(306) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(309) : 참고: 이 줄에서 호출 피드
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(417): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(416) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(417) : 참고: 이 줄에서 호출 피드
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(409): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(408) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(409) : 참고: 이 줄에서 호출 피드
-c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(446): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(445) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
-  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(456) : 참고: 이 줄에서 메모리 로드 피드
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(144): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(142) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(146) : 참고: 이 줄에서 메모리 로드 피드
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(344): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(342) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(345) : 참고: 이 줄에서 호출 피드
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(456): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(455) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(456) : 참고: 이 줄에서 호출 피드
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(448): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(447) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'j' 범위
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(448) : 참고: 이 줄에서 호출 피드
+c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(486): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(485) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'i' 범위
+  c:\users\sorac\osstetris\osstetris\tetrisfordesktop\src\tetrismanager.c(496) : 참고: 이 줄에서 메모리 로드 피드
   TetrisForDesktop.vcxproj -> C:\Users\sorac\OSSTetris\OSSTetris\TetrisForDesktop\Debug\TetrisForDesktop.exe
