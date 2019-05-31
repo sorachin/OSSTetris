@@ -10,21 +10,21 @@ void Array_Create(Array* array, int capacity, size_t size){
 	array->length = 0;
 	array->current = -1;
 }
-
+////리스트 생성 함수
 void Array_Destroy(Array* array){
 	if (array->front){
 		free(array->front);
 		array->front = NULL;
 	}
 }
-
+//리스트 삭제 함수
 int Array_Store(Array* array, int index, void* object, size_t size){
 	memcpy(((char*)array->front) + (index * size), object, size);
 	array->length++;
 	array->current = index;
 	return array->current;
 }
-
+//해당 리스트가 가진 메모리를 복사해서 데이터를 한칸 더 늘린 후 current인수에 저장
 int Array_Insert(Array* array, int index, void* object, size_t size){
 	void* temp;
 	int i;
@@ -50,7 +50,7 @@ int Array_Insert(Array* array, int index, void* object, size_t size){
 	array->current = index;
 	return array->current;
 }
-
+//리스트 삽입함수
 int Array_AppendFromFront(Array* array, void* object, size_t size){
 	void* temp;
 	int i;
@@ -71,7 +71,7 @@ int Array_AppendFromFront(Array* array, void* object, size_t size){
 	array->current = 0;
 	return array->current;
 }
-
+//앞에서부터 데이터 삽입하는 함수
 int Array_AppendFromRear(Array* array, void* object, size_t size){
 	void* temp;
 	int i;
@@ -92,7 +92,7 @@ int Array_AppendFromRear(Array* array, void* object, size_t size){
 	array->current = array->capacity - 1;
 	return array->current;
 }
-
+//맨 뒤에 데이터를 삽입하는 함수
 int Array_Delete(Array* array, int index, size_t size){
 	void* temp;
 	int i;
@@ -117,7 +117,7 @@ int Array_Delete(Array* array, int index, size_t size){
 	array->current = index;
 	return array->current;
 }
-
+//받아온 인덱스 부분까지 리스트 데이터를 삭제하는 함수
 int Array_DeleteFromFront(Array* array, size_t size){
 	void* temp;
 	int i;
@@ -137,7 +137,7 @@ int Array_DeleteFromFront(Array* array, size_t size){
 	array->current = -1;
 	return array->current;
 }
-
+//리스트 맨 앞에있는 데이터를 삭제하는 함수
 int Array_DeleteFromRear(Array* array, size_t size){
 	void* temp;
 	int i;
@@ -168,12 +168,13 @@ void Array_Clear(Array* array){
 	array->current = -1;
 }
 
-int Array_Modify(Array* array, int index, void* object, size_t size){
+int Array_Modify(Array* array, int index, void* object, size_t size) {
 	memcpy(((char*)array->front) + (index * size), object, size);
 	array->current = index;
 	return array->current;
 }
-
+/*
+//해당 리스트가 가진 메모리를 복사해서 current인수에 저장
 int Array_LinearSearchByUnique(Array* array, void* key, size_t size, int(*Compare)(void*, void*)){
 	int index = -1;
 	int i = 0;
@@ -251,7 +252,7 @@ void Array_BinarySearchByDuplicate(Array* array, void* key, int** indexes, int* 
 		}
 	}
 }
-
+*/
 void Array_SelectionSort(Array* array, size_t size, int(*Compare)(void*, void*)){
 	void* tempObject;
 	int i;
@@ -275,7 +276,7 @@ void Array_SelectionSort(Array* array, size_t size, int(*Compare)(void*, void*))
 		tempObject = NULL;
 	}
 }
-
+//리스트 선택정렬
 void Array_InsertionSort(Array* array, size_t size, int(*Compare)(void*, void*)){
 	void* tempObject;
 	int i;
@@ -295,7 +296,7 @@ void Array_InsertionSort(Array* array, size_t size, int(*Compare)(void*, void*))
 		tempObject = NULL;
 	}
 }
-
+//삽입정렬함수
 void Array_Indirect_InsertionSort(Array* array, int** indexes, size_t size, int(*Compare)(void*, void*)){
 	int i;
 	int j;
@@ -314,7 +315,8 @@ void Array_Indirect_InsertionSort(Array* array, int** indexes, size_t size, int(
 		(*indexes)[j] = temp;
 	}
 }
-
+//간접정렬함수
 void Array_GetAt(Array* array, int index, void* object, size_t size){
 	memcpy(object, ((char*)array->front) + (index * size), size);
 }
+//리스트에 담긴 데이터를 가져오는함수
